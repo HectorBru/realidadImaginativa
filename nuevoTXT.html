@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
 <head>
 	<title>Escribir relato</title>
-	<link rel="stylesheet" type="text/css" href="nuevoTxtSS.css">
-	<script type="text/javascript" src="nuevoTxt.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="nuevoTxtscript.js"></script>
 </head>
 
 <header> <h1>Escribir nuevo relato</h1> </header>
 
 <body>
+<div id="datosDelTexto">
+	<form>
+		<label for="nombreTxt">Título del relato:</label><br>
+		<input type="text" name="nombreTxt" id="nombreTxt"><br>
+		<label for="tipoTxt">Tipo de relato:</label><br>
+		<input type="text" name="tipoTxt" id="tipoTxt">
+	</form>
+	<span>¿Tienes dudas sobre qué tipo de relato estás escribiendo? Ve a la sección del índice para ver qué tipos de relatos hay y su descripción.</span>
+	<input onclick="main()" type="submit" id="boton" name="submit">
+</div>
+
+<div id="texto">
+	<form>
+	<label for="texto">Escribe en este campo tu relato:</label>
+	<textarea name="texto" id="texto"></textarea>
+	</form>
+</div>
 
 </body>
 </html>

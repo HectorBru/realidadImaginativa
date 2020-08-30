@@ -17,11 +17,15 @@ img{
 	right: 0;
 	z-index: -1;
 }
-
+html{
+	min-height: 100%;
+}
 body {
 	background-image: linear-gradient(pink, skyblue);
+	background-repeat: all;
 	font-size: 100%;
 	font-family: 'Arial';
+	height: 100%;
 }
 
 .historias{
@@ -150,4 +154,39 @@ th{
 }
 table, th, td{
 	border: 1px solid;
+}
+
+#texto{
+	width: 40%;
+	display: inline;
+	float: right;
+}
+
+#texto label{
+	display: block;
+}
+#datosDelTexto{
+	width: 25%;
+	float: left;
+	display: inline;
+}
+
+#datosDelTexto *{
+	margin-bottom: 20px;
+}
+
+#datosDelTexto input{
+	width: 400px;
+}
+
+#boton{
+	position: relative;
+	top: 281px;
+	left: 600px;
+	max-width: 150px;
+	height: 50px;
+}
+textarea{
+	width: 500px;
+	height: 500px;
 }
